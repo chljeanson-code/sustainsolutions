@@ -25,10 +25,13 @@ body {
 }
 
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 4rem;
   align-items: center;
+  background: transparent;
+
 }
 
 .navbar ul {
@@ -41,6 +44,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  transition: opacity 0.3s ease;
 }
 
 .navbar a:hover {
