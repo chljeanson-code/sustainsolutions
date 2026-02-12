@@ -1,10 +1,14 @@
 /* Font & base */
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #111;
+  font-family: 'Inter', sans-serif;
+
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* effet premium */
+  background-repeat: no-repeat;
+
 }
 
 /* Hero Section */
