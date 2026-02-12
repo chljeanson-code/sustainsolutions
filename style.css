@@ -194,6 +194,3 @@ body::before {
   );
   z-index: -1;
 }
-html, body {
-  height: 100%;
-}
