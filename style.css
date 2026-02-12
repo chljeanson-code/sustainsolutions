@@ -157,3 +157,6 @@ footer {
   .navbar ul {flex-direction: column;}
   .hero-content h2 {font-size: 2rem;}
 }
+html {
+  scroll-behavior: smooth;
+}
