@@ -34,10 +34,14 @@ body {
 }
 
 .navbar {
+   position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 4rem;
-  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  z-index: 1000;
+  background: transparent;
 }
 
 .navbar ul {
