@@ -25,24 +25,34 @@ body {
 }
 
 .navbar {
+  position: fixed;       /* reste en haut au scroll */
+  top: 0;
+  right: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* menu aligné à droite */
   padding: 1.5rem 4rem;
   align-items: center;
+  z-index: 1000;
+  background: transparent;
+  font-family: 'Inter', sans-serif; /* police correcte */
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin: 0; 
+  padding: 0;
 }
 
 .navbar a {
-  color: #fff;
+  color: #fff;            /* blanc */
   text-decoration: none;
   font-weight: 600;
+  font-family: 'Inter', sans-serif; /* police */
+  transition: color 0.3s ease;
 }
-
 
 .navbar a:hover {
   color: #00f0ff;
