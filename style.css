@@ -3,16 +3,13 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
 
-  background-image: url('assets/bg.jpg');
-  background-size: cover;
-  background-position: center;
+
   background-attachment: fixed; /* effet premium */
   background-repeat: no-repeat;
 }
 
 /* Hero Section */
 .hero {
-  background: url('assets/bg.jpg') ;
   height: 100vh;
   position: relative;
   color: white;
@@ -20,10 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
   padding: 0 2rem;
-  background-size: cover;
-  background-position: center;
 }
 
 .hero-overlay {
@@ -99,9 +93,12 @@ body {
 }
 
 /* Section styling */
+
 .section {
   padding: 5rem 2rem;
+  background: transparent;
 }
+
 
 .container {
   max-width: 1000px;
@@ -121,10 +118,12 @@ h2 {
 }
 
 .project {
-  background:url('assets/bg1.jpg') center/cover no-repeat;
-
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
   border-radius: 6px;
-  overflow: hidden;
+  padding: 1rem;
+
+
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
@@ -185,3 +184,13 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.8)
+  );
+  z-index: -1;
