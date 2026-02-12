@@ -36,8 +36,9 @@ body {
 
 .navbar ul {
   list-style: none;
-  display: flex;
+  display: inline-flex; /* au lieu de flex */
   gap: 1.5rem;
+}
 }
 
 .navbar a {
