@@ -25,28 +25,24 @@ body {
 }
 
 .navbar {
-  position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1.5rem 4rem;
   align-items: center;
-  background: transparent;
-
 }
 
 .navbar ul {
   list-style: none;
-  display: inline-flex; /* au lieu de flex */
+  display: flex;
   gap: 1.5rem;
-}
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: opacity 0.3s ease;
 }
+
 
 .navbar a:hover {
   color: #00f0ff;
