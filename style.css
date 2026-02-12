@@ -1,24 +1,25 @@
-
-/* ============================
-   FOND GLOBAL + TYPOGRAPHIE
-   ============================ */
+/* =====================
+   BASE + TYPOGRAPHIE
+   ===================== */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: 'Inter', sans-serif;
   color: white;
   scroll-behavior: smooth;
 }
 
+/* =====================
+   FOND PREMIUM
+   ===================== */
 body {
-  background: url('assets/bg.jpg') center center / cover no-repeat;
-  background-attachment: scroll; /* fond visible en scroll */
+  background: url('assets/bg.jpg') center top / cover no-repeat;
+  background-attachment: scroll; /* le fond suit le scroll */
 }
 
-/* ============================
+/* =====================
    NAVBAR
-   ============================ */
+   ===================== */
 .navbar {
   position: fixed;
   top: 0;
@@ -26,29 +27,29 @@ body {
   display: flex;
   justify-content: center;
   padding: 1.5rem 0;
-  z-index: 200;
+  z-index: 1000;
   background: transparent;
-  font-weight: 600;
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  list-style: none;
+  gap: 2rem;
 }
 
 .navbar a {
   color: #fff;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .navbar a:hover {
   color: #00f0ff;
 }
 
-/* ============================
+/* =====================
    HERO SECTION
-   ============================ */
+   ===================== */
 .hero {
   position: relative;
   height: 80vh;
@@ -59,16 +60,15 @@ body {
   padding: 0 2rem;
 }
 
+/* Overlay léger uniquement sur le hero */
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25); /* LEGER overlay */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15); /* léger, texte lisible */
   z-index: 1;
 }
 
+/* Contenu au-dessus de l'overlay */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -84,7 +84,6 @@ body {
 
 .hero-content p {
   font-size: 1.25rem;
-  font-weight: 400;
   margin-bottom: 2rem;
 }
 
@@ -101,27 +100,18 @@ body {
   background: #00d4cc;
 }
 
-/* ============================
+/* =====================
    SECTIONS
-   ============================ */
+   ===================== */
 .section {
   padding: 5rem 2rem;
   background: transparent;
+  position: relative;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* ============================
+/* =====================
    PROJECTS
-   ============================ */
+   ===================== */
 .project-grid {
   display: grid;
   gap: 2rem;
@@ -129,7 +119,7 @@ h2 {
 }
 
 .project {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   border-radius: 6px;
   padding: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -153,9 +143,9 @@ h2 {
   padding: 0 1rem 1rem 1rem;
 }
 
-/* ============================
+/* =====================
    CONTACT FORM
-   ============================ */
+   ===================== */
 form input, form textarea {
   width: 100%;
   padding: 0.75rem;
@@ -177,9 +167,9 @@ form button:hover {
   background: #00d4cc;
 }
 
-/* ============================
+/* =====================
    FOOTER
-   ============================ */
+   ===================== */
 footer {
   text-align: center;
   padding: 2rem;
@@ -187,9 +177,9 @@ footer {
   color: white;
 }
 
-/* ============================
+/* =====================
    RESPONSIVE
-   ============================ */
+   ===================== */
 @media(max-width:768px) {
   .navbar ul { flex-direction: column; }
   .hero-content h2 { font-size: 2rem; }
