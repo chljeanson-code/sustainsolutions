@@ -23,7 +23,20 @@ body {
   display: flex;
   flex-direction: column;
 }
+.logo-link {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+}
 
+.logo {
+  height: 45px;
+  width: auto;
+  display: block;
+}
 .navbar {
   position: fixed;       /* reste en haut au scroll */
   top: 0;
