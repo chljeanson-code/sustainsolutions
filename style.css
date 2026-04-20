@@ -78,7 +78,27 @@ body {
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 
+.about-img {
+  width: 25%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 60%;
+  }
+}
 .btn {
   background: #00f0ff;
   color: #111;
