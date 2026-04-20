@@ -85,8 +85,8 @@ body {
 }
 
 .about-img {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
 
   flex-shrink: 0;     /* 💥 crucial */
   flex: 0 0 220px;    /* 💥 bloque compression */
