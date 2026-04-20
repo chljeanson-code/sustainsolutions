@@ -86,9 +86,13 @@ body {
 
 .about-img {
   width: 25%;
-  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  border: 3px solid #fff;
 }
+
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
