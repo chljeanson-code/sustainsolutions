@@ -1,80 +1,218 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sustain Solutions Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Prénom NOM] — Ingénieur conseil décarbonation industrie du sport</title>
+  <meta name="description" content="Audit matière, éco-conception et supply chain responsable pour marques, fédérations et événements sportifs. Polymères, composites, équipement. Call découverte gratuit.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[Prénom NOM] — Décarbonation industrie du sport">
+  <meta property="og:description" content="Ingénieur conseil : éco-conception, sourcing responsable, ACV pour l'industrie du sport.">
+  <meta property="og:image" content="https://www.sustainsolutions.fr/assets/og-cover.jpg">
+  <meta property="og:url" content="https://www.sustainsolutions.fr/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org Person + ProfessionalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Sustain Solutions",
+    "description": "Conseil en décarbonation de l'industrie du sport.",
+    "url": "https://www.sustainsolutions.fr",
+    "founder": {
+      "@type": "Person",
+      "name": "[Prénom NOM]",
+      "jobTitle": "Ingénieur conseil décarbonation",
+      "sameAs": ["https://www.linkedin.com/in/REMPLACER"]
+    },
+    "areaServed": "Global",
+    "serviceType": ["Eco-design", "Life Cycle Assessment", "Sustainable sourcing"]
+  }
+  </script>
+
+  <!-- Plausible (RGPD-friendly, sans cookies) -->
+  <script defer data-domain="sustainsolutions.fr" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="hero-overlay">
-   
-        <h1>Sustain Solutions</h1>
-         <nav class="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    <section class="hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-        <h2>DECARBONIZING THE SPORTS INDUSTRY</h2>
-        <p>Specializing in polymers, composites & low-impact engineering. From prototyping to mass production, I connect stakeholders, optimize products, and manage lifecycle solutions.</p>
-        <a href="#contact" class="btn">Contact Me</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo">Sustain Solutions</a>
+    <nav aria-label="Navigation principale">
+      <a href="/a-propos/">À propos</a>
+      <a href="/services/">Services</a>
+      <a href="/cas/">Cas clients</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <div class="header-actions">
+      <a href="/en/" class="lang-switch" aria-label="English version">EN</a>
+      <a href="#contact" class="btn btn-primary">Prendre RDV</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Décarbonez vos produits sport. <span class="accent">Concrètement.</span></h1>
+        <p class="lead">Ingénieur conseil en éco-conception et supply chain responsable — polymères, composites et équipement sportif. J'aide les marques, fédérations et événements à réduire leur empreinte carbone, du prototype à la production de masse.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Prendre un call (20 min)</a>
+          <a href="/cas/" class="btn btn-ghost">Voir les cas clients</a>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I work at the intersection of innovation and sustainability in the sports industry. I provide sourcing, product/component development, optimization, and end-of-life management solutions for polymers and composites.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <img src="assets/bg1.jpg" alt="Project 1">
-          <h3>Low-Impact Foam Prototype</h3>
-          <p>Material optimization and lifecycle management from prototype to mass production.</p>
-        </div>
-        <div class="project">
-          <img src="assets/bg2.jpg" alt="Project 2">
-          <h3>Recycled Polymer Sports Gear</h3>
-          <p>Sourcing sustainable materials and designing products for minimal environmental footprint.</p>
-        </div>
+      <div class="hero-img">
+        <img src="/assets/portrait.webp" alt="[Prénom NOM] en atelier prototype" loading="eager" width="520" height="620">
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
+  <!-- LOGOS CLIENTS -->
+  <section class="logos">
     <div class="container">
-      <h2>Contact Me</h2>
-      <p>Let's discuss how we can innovate in low-impact sports products together.</p>
-      <form action="https://formspree.io/f/your-email" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="_replyto" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <p class="logos-title">Ils m'ont fait confiance</p>
+      <div class="logos-row">
+        <img src="/assets/logos/logo1.svg" alt="Client 1" loading="lazy">
+        <img src="/assets/logos/logo2.svg" alt="Client 2" loading="lazy">
+        <img src="/assets/logos/logo3.svg" alt="Client 3" loading="lazy">
+        <img src="/assets/logos/logo4.svg" alt="Client 4" loading="lazy">
+        <img src="/assets/logos/logo5.svg" alt="Client 5" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <div class="container">
+      <h2>Trois façons de travailler ensemble</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🧪</div>
+          <h3>Audit matière &amp; éco-conception</h3>
+          <p>Cartographie de vos matériaux, substitutions à impact réduit, plan d'action priorisé. 4 à 8 semaines.</p>
+          <a href="/services/#audit">En savoir plus →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌏</div>
+          <h3>Sourcing responsable &amp; supply chain Asie</h3>
+          <p>Réseau direct de fabricants taïwanais et asiatiques, audits terrain, cahiers des charges environnementaux.</p>
+          <a href="/services/#sourcing">En savoir plus →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon">♻️</div>
+          <h3>ACV &amp; fin de vie</h3>
+          <p>ACV (ISO 14040/44), empreintes produit (ISO 14067), scénarios de réparation, recyclage, reprise.</p>
+          <a href="/services/#acv">En savoir plus →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <h2>Comment je travaille</h2>
+      <ol class="steps">
+        <li><strong>Call découverte</strong> — 20 min, gratuit.</li>
+        <li><strong>Cadrage</strong> — 1 à 2 semaines, livrable &amp; devis fermé.</li>
+        <li><strong>Livraison</strong> — 4 à 12 semaines selon périmètre.</li>
+        <li><strong>Suivi &amp; mesure</strong> — KPIs d'impact partagés.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- KPIs -->
+  <section class="kpis">
+    <div class="container kpis-row">
+      <div><span class="num">[XX]</span><span class="lbl">ans d'industrie</span></div>
+      <div><span class="num">[XXX] t</span><span class="lbl">CO₂ évitées</span></div>
+      <div><span class="num">[XX]</span><span class="lbl">projets livrés</span></div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGE -->
+  <section class="quote">
+    <div class="container">
+      <blockquote>
+        « [Verbatim court, 2 lignes, nominatif et précis]. »
+        <cite>— [Prénom NOM], [Fonction, Entreprise]</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- LEAD MAGNET -->
+  <section class="lead-magnet">
+    <div class="container lm-grid">
+      <div>
+        <h2>10 leviers de décarbonation pour une marque d'équipement sportif</h2>
+        <p>Le guide que j'aurais aimé lire en prenant mon premier projet. Gratuit, par email.</p>
+      </div>
+      <form action="https://formspree.io/f/REMPLACER" method="POST" class="lm-form">
+        <label for="lm-email">Email professionnel</label>
+        <input id="lm-email" name="email" type="email" required>
+        <button class="btn btn-primary" type="submit">Recevoir le guide</button>
       </form>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2026 Sustain Solutions. All rights reserved.</p>
-  </footer>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Parlons de votre projet</h2>
+      <p class="lead">Un call de 20 minutes pour comprendre votre besoin — gratuit, sans engagement.</p>
+      <div class="contact-grid">
+        <div class="cal-embed">
+          <!-- Calendly inline widget -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/REMPLACER/20min" style="min-width:320px;height:630px"></div>
+          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/REMPLACER" method="POST">
+          <label>Nom<input name="name" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Entreprise<input name="company"></label>
+          <label>Votre besoin<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+      <p class="contact-direct">Ou directement : <a href="mailto:contact@sustainsolutions.fr">contact@sustainsolutions.fr</a> • <a href="https://www.linkedin.com/in/REMPLACER">LinkedIn</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Sustain Solutions</strong>
+      <p>Décarbonation de l'industrie du sport — polymères, composites, équipement.</p>
+    </div>
+    <nav>
+      <a href="/a-propos/">À propos</a>
+      <a href="/services/">Services</a>
+      <a href="/cas/">Cas clients</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <nav>
+      <a href="mailto:contact@sustainsolutions.fr">Email</a>
+      <a href="https://www.linkedin.com/in/REMPLACER">LinkedIn</a>
+      <a href="#contact">Prendre RDV</a>
+    </nav>
+    <nav>
+      <a href="/mentions-legales/">Mentions légales</a>
+      <a href="/confidentialite/">Confidentialité</a>
+      <a href="/en/">English</a>
+    </nav>
+  </div>
+  <p class="copyright">© 2026 [Prénom NOM] — Sustain Solutions. Tous droits réservés.</p>
+</footer>
+
 </body>
 </html>
