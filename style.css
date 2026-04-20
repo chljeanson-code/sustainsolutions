@@ -85,10 +85,11 @@ body {
 }
 
 .about-img {
-  width: 25%;
-  aspect-ratio: 1 / 1;
+  width: 180px;          /* taille fixe = important */
+  height: 180px;         /* même valeur => cercle parfait */
   border-radius: 50%;
   object-fit: cover;
+  overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   border: 3px solid #fff;
 }
