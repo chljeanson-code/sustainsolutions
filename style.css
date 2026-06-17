@@ -51,7 +51,7 @@ h1, h2, h3 {
   align-items: center;
   z-index: 1000;
   background: transparent;
-  font-family: 'Inter', sans-serif; /* police correcte */
+  font-family: 'Manrope', sans-serif; /* police correcte */
 }
 
 .navbar ul {
