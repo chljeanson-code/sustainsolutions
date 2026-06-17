@@ -177,7 +177,14 @@ h2 {
   transition: transform 0.3s;
 
 }
-
+.project {
+  flex: 0 0 350px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
 /* Tablette */
 @media (max-width: 900px) {
   .project-grid {
