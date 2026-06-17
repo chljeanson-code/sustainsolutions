@@ -223,29 +223,30 @@ form input, form textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-/* PDF Section */
-.pdf-section {
-  background: #ffffff;
-  text-align: center;
+
+.founder-content{
+    display:flex;
+    gap:40px;
+    align-items:center;
 }
 
-.pdf-section p {
-  margin-bottom: 30px;
+.founder-content img{
+    width:350px;
+    border-radius:12px;
 }
 
-.pdf-viewer {
-  width: 100%;
-  height: 900px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+@media(max-width:768px){
+    .founder-content{
+        flex-direction:column;
+    }
+
+    .founder-content img{
+        width:100%;
+        max-width:350px;
+    }
 }
 
-.pdf-viewer iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+
 form button {
   background: #00f0ff;
   color: #111;
