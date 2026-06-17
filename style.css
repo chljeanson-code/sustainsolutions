@@ -97,8 +97,11 @@ body {
 }
 
 .about-content p {
-  text-align: justify;
+  text-align: center;
   line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+
 }
 .about-extra {
   margin-top: 45px;
