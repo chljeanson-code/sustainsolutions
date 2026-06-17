@@ -250,7 +250,7 @@ h2 {
   .project-grid {
     grid-template-columns: 1fr;
   }
-}
+
 }
 .project img {
   width: 100%;
@@ -270,13 +270,32 @@ h2 {
 }
 
 /* Contact form */
-form input, form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.contact form{
+    max-width:1000px;
+    margin:40px auto 0 auto;
 }
+
+.contact form input{
+    width:calc(50% - 12px);
+    padding:0.75rem;
+    margin-bottom:1rem;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+
+.contact form input:first-child{
+    margin-right:20px;
+}
+
+.contact form textarea{
+    width:100%;
+    min-height:180px;
+    padding:0.75rem;
+    border:1px solid #ddd;
+    border-radius:4px;
+}
+
+
 
 .founder-content {
   display:flex;
