@@ -123,6 +123,35 @@ body {
   border: 3px solid #fff;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
+.provide-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.provide-card{
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    transition:all .4s ease;
+    cursor:pointer;
+}
+
+.provide-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.provide-card img{
+    width:100%;
+    display:block;
+    transition:transform .5s ease;
+}
+
+.provide-card:hover img{
+    transform:scale(1.05);
+}
 
 @media (max-width: 768px) {
   .about-content {
