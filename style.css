@@ -285,9 +285,12 @@ form input, form textarea {
 
 .founder-gallery {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3, 1fr);
   gap:25px;
-  margin-top:50px;
+
+  max-width:850px;
+  margin:50px auto 0 auto;
+
 }
 
 .gallery-item img {
@@ -318,7 +321,7 @@ form input, form textarea {
       height:220px;
   }
 }
-}
+
 
 
 form button {
