@@ -354,10 +354,11 @@ h2 {
 form button {
   background: #00f0ff;
   color: #111;
-  border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
-  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+
 }
 
 form button:hover {
