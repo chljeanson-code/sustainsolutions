@@ -95,7 +95,9 @@ body {
 .about-content {
   width: 100%;
 }
-
+.about-content {
+  margin-top: 50px;
+}
 .about-content p {
   text-align: center;
   line-height: 1.8;
