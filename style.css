@@ -459,17 +459,15 @@ html {
 }
 
 .partners-track img {
-    height: 85px;
+    height: 80px;
     width: auto;
     object-fit: contain;
-    filter: grayscale(100%);
-    opacity: 0.8;
-    transition: all 0.3s ease;
+    filter: none;
+    opacity: 1;
+    transition: transform 0.3s ease;
 }
 
 .partners-track img:hover {
-filter: none;
-  opacity: 1;
     transform: scale(1.1);
 }
 
