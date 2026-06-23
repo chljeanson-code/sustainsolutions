@@ -481,3 +481,7 @@ filter: none;
         transform: translateX(0%);
     }
 }
+
+.partners-track img.big-logo {
+    height: 150px;
+}
