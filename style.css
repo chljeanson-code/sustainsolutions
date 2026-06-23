@@ -468,8 +468,8 @@ html {
 }
 
 .partners-track img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
+filter: none;
+  opacity: 1;
     transform: scale(1.1);
 }
 
