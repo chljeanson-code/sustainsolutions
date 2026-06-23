@@ -424,3 +424,60 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+
+
+/* =========================
+   PARTNERS
+========================= */
+
+.partners-section {
+    padding: 80px 0;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.partners-section h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.partners-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.partners-track {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: max-content;
+    animation: scrollPartners 25s linear infinite;
+}
+
+.partners-track img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.partners-track img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes scrollPartners {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
