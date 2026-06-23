@@ -432,7 +432,7 @@ html {
 ========================= */
 
 .partners-section {
-    padding: 80px 0;
+    padding: 100px 0;
     text-align: center;
     overflow: hidden;
     background: transparent;
@@ -459,7 +459,7 @@ html {
 }
 
 .partners-track img {
-    height: 70px;
+    height: 85px;
     width: auto;
     object-fit: contain;
     filter: grayscale(100%);
