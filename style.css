@@ -485,3 +485,7 @@ filter: none;
 .partners-track img.big-logo {
     height: 150px;
 }
+
+.partners-track img.small-logo {
+    height: 60px;
+}
