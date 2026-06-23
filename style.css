@@ -434,8 +434,8 @@ html {
 .partners-section {
     padding: 80px 0;
     text-align: center;
-    background: #fff;
     overflow: hidden;
+    background: transparent;
 }
 
 .partners-section h2 {
