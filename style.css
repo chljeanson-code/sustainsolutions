@@ -561,20 +561,33 @@ html {
   }
 @media (max-width: 768px) {
 
-  .logo-link {
-    top: 10px;
-    left: 10px;
+   .navbar {
+    position: relative;
+    justify-content: center;
+    padding: 15px 10px;
   }
+
+
+  .logo-link {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
 
   .logo {
-    height: 35px;
+    height: 45px;
   }
 
-}
-  @media (max-width: 768px) {
 
-  .navbar {
-    position: relative;
+  .hero-content {
+    padding-top: 0;
   }
-
 }
