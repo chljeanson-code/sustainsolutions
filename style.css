@@ -487,3 +487,42 @@ html {
 .partners-track img.small-logo {
     height: 60px;
 }
+
+
+@media (max-width: 768px) {
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+    padding: 0 15px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .provide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .partners-track img {
+    height: 55px;
+  }
+
+  .partners-track img.big-logo {
+    height: 85px;
+  }
+
+  .partners-track img.small-logo {
+    height: 40px;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
