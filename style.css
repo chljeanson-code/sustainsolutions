@@ -526,3 +526,24 @@ html {
   body {
     background-attachment: scroll;
   }
+
+
+@media (max-width: 768px) {
+
+  .logo-link {
+    top: 10px;
+    left: 10px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+}
+  @media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+  }
+
+}
